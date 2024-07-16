@@ -1,0 +1,23 @@
+import java.util.*;
+class Solution {
+    //  String str = " ";
+    public boolean isPalindrome(int x) {
+        String str = "";
+        if(x == 0){
+            return true;
+        }
+        else{
+        for(int i =x;i>0;i= i/10){
+            int z = i%10;
+            str += z;
+        }
+        String y = String.valueOf(x);
+        if(str.equals(y)){
+            return true;
+        }
+        else{
+            return false;
+    }
+        }
+}
+}
